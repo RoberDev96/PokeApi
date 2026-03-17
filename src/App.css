@@ -76,9 +76,6 @@ html ::-webkit-scrollbar-thumb {
     gap: 30px;
   }
   body{
- display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--clr-gray);
   align-items: flex-start; 
   min-height: 100vh;
