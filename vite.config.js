@@ -6,4 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/PokeApi/',
+  build: {
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]'
+      }
+    }
+  }
 });
