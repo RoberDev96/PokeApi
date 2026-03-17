@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./card";
 import { usePokemonStore } from "../assets/store/pokeZustand"
+import Logo from "../imagenes/search.svg"
 
 function Pokemones({ tipoFiltro }) {
   const { Poke, setselectPoke, setPoke } = usePokemonStore((state) => state);
@@ -70,10 +71,10 @@ function Pokemones({ tipoFiltro }) {
           </h1>
         </div>
         
-        {/* INPUT DE BÚSQUEDA CORREGIDO */}
+       
         <div className="contenedor-header-input flex justify-center align-middle h-7 w-full">
           <img
-            src="./src/imagenes/Busqueda-Logo.svg"
+            src={Logo}
             className="busqueda-logo"
             alt="Search"
           />
