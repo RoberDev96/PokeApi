@@ -13,7 +13,8 @@ function App() {
   };
   return (
     <>
-      <main className="main m-1.5 align-middle gap-10">
+      <main className="main grid grid-cols-1 
+      md:grid-cols-2 xl:grid-cols-3 m-1.5 align-middle gap-10">
         <Header filtrar={handleFiltrar} />
         <Pokemones tipoFiltro={selectTipo}/>
         <Targect/>

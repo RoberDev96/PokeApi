@@ -53,7 +53,7 @@ html ::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
-.main{
+/* .main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -69,4 +69,4 @@ html ::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
+} */
