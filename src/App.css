@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import url('href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mooli&family=Playwrite+CU+Guides&family=Playwrite+NZ+Basic+Guides&display=swap');
+
+@theme{
+  --font-Lato: "Lato", sans-serif
+}
+
+@theme{
+    --clr-black: #1c1c1c;
+    --clr-gray: #ececec;
+    --clr-white: #f7f7f7;
+
+--color-type-normal: #D8D8B8;    /* Beige más claro */
+--color-type-fire: #FF9A7A;      /* Naranja-salmon claro */
+--color-type-water: #7AB2FF;      /* Azul cielo claro */
+--color-type-grass: #96E696;      /* Verde menta claro */
+--color-type-electric: #FFED87;    /* Amarillo suave claro */
+--color-type-ice: #A6E6E6;        /* Celeste muy claro */
+--color-type-fighting: #F08070;    /* Rojo coral claro */
+--color-type-poison: #D4A0D4;      /* Lila claro */
+--color-type-ground: #F0D6A8;      /* Beige dorado claro */
+--color-type-flying: #C9B9F5;      /* Lavanda muy claro */
+--color-type-psychic: #FFB0C8;     /* Rosa bebé claro */
+--color-type-bug: #E0E87C;         /* Verde lima claro */
+--color-type-rock: #D8C694;        /* Arena claro */
+--color-type-dragon: #B294FF;      /* Lila-azul claro */
+--color-type-dark: #A89C8C;        /* Gris-marrón claro */
+--color-type-steel: #D8D8E8;       /* Plateado perlado */
+--color-type-ghost: #B092D8;       /* Púrpura lavanda claro */
+--color-type-fairy: #FFE0E8;       /* Rosa bebé muy suave */
+--color-type-all: #3e5269;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr-gray);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  width: 7px;
+  background-color: #2437469d;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #15212A;
+  border-radius: 2px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:1030px) {
+  .main{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+ }
+@media (max-width:680px) {
+  .main{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
